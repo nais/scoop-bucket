@@ -1,0 +1,15 @@
+{
+    "version": "1.20221011081121",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nais/cli/releases/download/1.20221011081121/nais-cli_1.20221011081121_windows_amd64.tar.gz",
+            "bin": [
+                "nais.exe"
+            ],
+            "hash": "ee9680fb6d344f35b73022dba4eb50ade1ac26c58ca6973bc3c0cd2d851bceff"
+        }
+    },
+    "homepage": "https://github.com/nais/cli",
+    "license": "MIT",
+    "description": "Command-line interface for NAIS"
+}
