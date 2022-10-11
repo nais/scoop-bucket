@@ -1,0 +1,15 @@
+{
+    "version": "2022-10-07-175354",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nais/device/releases/download/2022-10-07-175354/naisdevice.exe",
+            "installer": {},
+            "uninstaller": {
+                "file": "%ProgramFiles%\\NAV\\naisdevice\\uninstaller.exe"
+            }
+        }
+    },
+    "homepage": "https://github.com/nais/device",
+    "license": "MIT",
+    "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner."
+}
