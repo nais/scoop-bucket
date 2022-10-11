@@ -1,23 +1,23 @@
 {
-    "version": "2022-10-07-175354",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/nais/device/releases/download/2022-10-07-175354/naisdevice.exe",
-            "hash": "269b4e9ae68a4564c70d074002019b1d02b0e93b2c81e057e41386799db7bb7b",
-            "installer": {
-                "script": [
-                    "Write-Output \"Executing installer at $dir\\$fname\"",
-                    "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
-                ]
-            },
-            "uninstaller": {
-                "script": [
-                    "Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null"
-                ]
-            }
-        }
-    },
-    "homepage": "https://github.com/nais/device",
-    "license": "MIT",
-    "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner."
+  "version": "2022-10-07-175354",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/nais/device/releases/download/2022-10-07-175354/naisdevice.exe",
+      "hash": "269b4e9ae68a4564c70d074002019b1d02b0e93b2c81e057e41386799db7bb7b",
+      "installer": {
+        "script": [
+          "Write-Output \"Executing installer at $dir\\$fname\"",
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+        ]
+      },
+      "uninstaller": {
+        "script": [
+          "Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null"
+        ]
+      }
+    }
+  },
+  "homepage": "https://github.com/nais/device",
+  "license": "MIT",
+  "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner."
 }
