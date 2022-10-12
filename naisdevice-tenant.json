@@ -5,10 +5,15 @@
       "url": "https://github.com/nais/device/releases/download/2022-10-11-205612/naisdevice-tenant.exe",
       "hash": "a239fcebe93eff0d2be29989b6f99dbf1cde155485fe07051bde2bf9a1e4e774",
       "installer": {
-        "file": "$dir\\$fname"
+        "script": [
+          "Write-Output \"Executing installer at $dir\\$fname\"",
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+        ]
       },
       "uninstaller": {
-        "file": "$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe"
+        "script": [
+          "Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null"
+        ]
       }
     }
   },
