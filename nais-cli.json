@@ -1,12 +1,12 @@
 {
-    "version": "1.20221011081121",
+    "version": "1.20221012135818",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nais/cli/releases/download/1.20221011081121/nais-cli_1.20221011081121_windows_amd64.tar.gz",
+            "url": "https://github.com/nais/cli/releases/download/1.20221012135818/nais-cli_1.20221012135818_windows_amd64.tar.gz",
             "bin": [
                 "nais.exe"
             ],
-            "hash": "ee9680fb6d344f35b73022dba4eb50ade1ac26c58ca6973bc3c0cd2d851bceff"
+            "hash": "0a2f123e06e501efc89122c2ae0c96d53454e91a30eaea453c51c8498efe3861"
         }
     },
     "homepage": "https://github.com/nais/cli",
