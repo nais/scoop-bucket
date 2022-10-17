@@ -10,11 +10,9 @@
           "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
         ]
       },
-      "uninstaller": {
-        "script": [
-          "Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null"
-        ]
-      }
+      "post_uninstall": [
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+      ]
     }
   },
   "homepage": "https://github.com/nais/device",
