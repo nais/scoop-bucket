@@ -3,7 +3,7 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/nais/device/releases/download/2022-10-17-110535/naisdevice-tenant.exe",
-      "hash": "77a56e2159778b3bafeb7b42d6357d54bf1d09face3fe440d3105dd3acb30e08",
+      "hash": "Not Found",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
@@ -15,7 +15,16 @@
       ]
     }
   },
+  "autoupdate": {
+    "64bit": {
+      "url": "https://github.com/nais/device/releases/download/$version/naisdevice-tenant.exe"
+    },
+    "hash": {
+      "url": "$url.sha256"
+    }
+  },
   "homepage": "https://github.com/nais/device",
+  "checkver": "github",
   "license": "MIT",
-  "description": "naisdevice-tenant is a application suite that enables developers at a NAIS tenant to connect to internal resources in a secure and friendly manner."
+  "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner."
 }
