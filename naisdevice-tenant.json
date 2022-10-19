@@ -1,9 +1,9 @@
 {
-  "version": "2022-10-18-122452",
+  "version": "2022-10-19-123606",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/2022-10-18-122452/naisdevice-tenant.exe",
-      "hash": "f0d0393b5bbf7484db431edb4e8fb9366d543e1f41ef0379c6e7bc9fc454ea91",
+      "url": "https://github.com/nais/device/releases/download/2022-10-19-123606/naisdevice-tenant.exe",
+      "hash": "4a114a241d364ec8b4c827d89de4ab4f536bf89b4588066756e1e1b6cf041931",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",

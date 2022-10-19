@@ -1,9 +1,9 @@
 {
-  "version": "2022-10-18-122452",
+  "version": "2022-10-19-123606",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/2022-10-18-122452/naisdevice.exe",
-      "hash": "c09f21a3c6900fb66b6cb3b913a3dd9ff26e561f42e6c8eedc00be033ad48b65",
+      "url": "https://github.com/nais/device/releases/download/2022-10-19-123606/naisdevice.exe",
+      "hash": "769654fa8c35eb98be0055b341b61874fbfcb1612c9685aa9937760bf442fdca",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
