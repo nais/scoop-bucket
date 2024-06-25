@@ -3,7 +3,7 @@
   "architecture": {
     "64bit": {
       "url": "https://github.com/nais/device/releases/download/2024-06-25-161100/naisdevice-tenant.exe",
-      "hash": "Not Found",
+      "hash": "ec22820702a6d22bf6aa655882a98047369f703145049c62f5a3c0071e73ebe0",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
