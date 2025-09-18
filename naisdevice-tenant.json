@@ -1,9 +1,22 @@
 {
-  "version": "2025-05-19-132548",
+  "version": "v1.0.7",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/2025-05-19-132548/naisdevice-tenant.exe",
-      "hash": "b40ba1df0a0ff5ee520f738681120faf72f068dbc61ae81850e9eccabecd2f18",
+      "url": "https://github.com/nais/device/releases/download/v1.0.7/naisdevice-tenant_windows_amd64.exe",
+      "hash": "A072E213DED1AE0784830BDD16435C6A77B4690EBCA2F65C8CB8573A312D7108",
+      "installer": {
+        "script": [
+          "Write-Output \"Executing installer at $dir\\$fname\"",
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+        ]
+      },
+      "post_uninstall": [
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+      ]
+    },
+    "arm64": {
+      "url": "https://github.com/nais/device/releases/download/v1.0.7/naisdevice-tenant_windows_arm64.exe",
+      "hash": "DFD988C96B95E9E9A6E3CC6AD129BF29629485700EFB00CC06081FE56D43A98F",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
@@ -15,16 +28,8 @@
       ]
     }
   },
-  "autoupdate": {
-    "64bit": {
-      "url": "https://github.com/nais/device/releases/download/$version/naisdevice-tenant.exe"
-    },
-    "hash": {
-      "url": "$url.sha256"
-    }
-  },
-  "homepage": "https://github.com/nais/device",
+  "homepage": "https://docs.nais.io/operate/naisdevice/how-to/install/",
   "checkver": "github",
   "license": "MIT",
-  "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner"
+  "description": "naisdevice is a mechanism enabling developers to connect to internal resources in a secure and friendly manner."
 }
