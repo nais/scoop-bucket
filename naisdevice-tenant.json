@@ -1,9 +1,58 @@
 {
-  "version": "2025-05-19-132548",
+  "version": "v1.0.6
+NAISDEVICE_TENANT_LINUX_AMD64_HASH_BASE16=98C7EEFBEA2E4F2D1DB5BE65B4E942BFB04ADAB09F9EEF9E53B13DEC08DFFC4F
+NAISDEVICE_TENANT_LINUX_AMD64_HASH_BASE32=TDD6567KFZHS2HNVXZS3J2KCX6YEVWVQT6PO7HSTWE66YCG77RHQ====
+NAISDEVICE_TENANT_LINUX_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_linux_amd64.deb
+NAISDEVICE_TENANT_LINUX_ARM64_HASH_BASE16=F1915AEF07648FD3E5D5D98166637B7FF64E608FB63493B97F021BE5C4C27606
+NAISDEVICE_TENANT_LINUX_ARM64_HASH_BASE32=6GIVV3YHMSH5HZOV3GAWMY33P73E4YEPWY2JHOL7AIN6LRGCOYDA====
+NAISDEVICE_TENANT_LINUX_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_linux_arm64.deb
+NAISDEVICE_TENANT_MACOS_AMD64_HASH_BASE16=5456831EB6327CC18BA9C6F9F617C806937E0748CFD01ED136ED9544D904FCF5
+NAISDEVICE_TENANT_MACOS_AMD64_HASH_BASE32=KRLIGHVWGJ6MDC5JY347MF6IA2JX4B2IZ7IB5UJW5WKUJWIE7T2Q====
+NAISDEVICE_TENANT_MACOS_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_macos_amd64.pkg
+NAISDEVICE_TENANT_MACOS_ARM64_HASH_BASE16=AC28D291BBC81077E29CD1C82A158DFDD1FF46AD5CDF5BA4FD902A84674A0873
+NAISDEVICE_TENANT_MACOS_ARM64_HASH_BASE32=VQUNFEN3ZAIHPYU42HECUFMN7XI76RVNLTPVXJH5SAVIIZ2KBBZQ====
+NAISDEVICE_TENANT_MACOS_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_macos_arm64.pkg
+NAISDEVICE_TENANT_WINDOWS_AMD64_HASH_BASE16=BFE492F287CBCF775E42A61C16FDBCB8C2DF5A7ABB5A50227FB994A54B1B42CD
+NAISDEVICE_TENANT_WINDOWS_AMD64_HASH_BASE32=X7SJF4UHZPHXOXSCUYOBN7N4XDBN6WT2XNNFAIT7XGKKKSY3ILGQ====
+NAISDEVICE_TENANT_WINDOWS_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_windows_amd64.exe
+NAISDEVICE_TENANT_WINDOWS_ARM64_HASH_BASE16=7CA350D5441FB34E2BF5E7F002EB9205635C35C143773F4C1C0F432D4BEB2715
+NAISDEVICE_TENANT_WINDOWS_ARM64_HASH_BASE32=PSRVBVKED6ZU4K7V47YAF24SAVRVYNOBIN3T6TA4B5BS2S7LE4KQ====
+NAISDEVICE_TENANT_WINDOWS_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice-tenant_windows_arm64.exe
+NAISDEVICE_LINUX_AMD64_HASH_BASE16=F80DAB96817D5BEE05D4CAABD07FB1E5B5AB09CBE7AC304C666C3762C026CCDA
+NAISDEVICE_LINUX_AMD64_HASH_BASE32=7AG2XFUBPVN64BOUZKV5A75R4W22WCOL46WDATDGNQ3WFQBGZTNA====
+NAISDEVICE_LINUX_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_linux_amd64.deb
+NAISDEVICE_LINUX_ARM64_HASH_BASE16=4DC5585C85CD44778A677FF259A6C290EA707561F2F246003E47412E9E4CDE71
+NAISDEVICE_LINUX_ARM64_HASH_BASE32=JXCVQXEFZVCHPCTHP7ZFTJWCSDVHA5LB6LZEMAB6I5AS5HSM3ZYQ====
+NAISDEVICE_LINUX_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_linux_arm64.deb
+NAISDEVICE_MACOS_AMD64_HASH_BASE16=65002F72581CA719EA0095A770916F58C0EE78797F0FB507D5F135FF10192ECE
+NAISDEVICE_MACOS_AMD64_HASH_BASE32=MUAC64SYDSTRT2QASWTXBELPLDAO46DZP4H3KB6V6E276EAZF3HA====
+NAISDEVICE_MACOS_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_macos_amd64.pkg
+NAISDEVICE_MACOS_ARM64_HASH_BASE16=5D731CA5010A89F5E1B99E6CDC41BDD2C465110388ABB18589FF5A325483100D
+NAISDEVICE_MACOS_ARM64_HASH_BASE32=LVZRZJIBBKE7LYNZTZWNYQN52LCGKEIDRCV3DBMJ75NDEVEDCAGQ====
+NAISDEVICE_MACOS_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_macos_arm64.pkg
+NAISDEVICE_WINDOWS_AMD64_HASH_BASE16=C0BE7F7A188462468AEF3C26113DA6541C6301B4024B54F6E77EA9AF4AF6291D
+NAISDEVICE_WINDOWS_AMD64_HASH_BASE32=YC7H66QYQRRENCXPHQTBCPNGKQOGGANUAJFVJ5XHP2U26SXWFEOQ====
+NAISDEVICE_WINDOWS_AMD64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_windows_amd64.exe
+NAISDEVICE_WINDOWS_ARM64_HASH_BASE16=8E6014056951B4D99A7ADCF7AEBA71649C119ED3E1E26F3E5FF8CBFE3D853B75
+NAISDEVICE_WINDOWS_ARM64_HASH_BASE32=RZQBIBLJKG2NTGT23T325OTRMSOBDHWT4HRG6PS77DF74PMFHN2Q====
+NAISDEVICE_WINDOWS_ARM64_URL=https://github.com/nais/device/releases/download/v1.0.6/naisdevice_windows_arm64.exe ",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/2025-05-19-132548/naisdevice-tenant.exe",
-      "hash": "b40ba1df0a0ff5ee520f738681120faf72f068dbc61ae81850e9eccabecd2f18",
+      "url": "",
+      "hash": "",
+      "installer": {
+        "script": [
+          "Write-Output \"Executing installer at $dir\\$fname\"",
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+        ]
+      },
+      "post_uninstall": [
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+      ]
+    },
+    "arm64": {
+      "url": "",
+      "hash": "",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
@@ -15,16 +64,8 @@
       ]
     }
   },
-  "autoupdate": {
-    "64bit": {
-      "url": "https://github.com/nais/device/releases/download/$version/naisdevice-tenant.exe"
-    },
-    "hash": {
-      "url": "$url.sha256"
-    }
-  },
-  "homepage": "https://github.com/nais/device",
+  "homepage": "https://docs.nais.io/operate/naisdevice/how-to/install/",
   "checkver": "github",
   "license": "MIT",
-  "description": "naisdevice is a application suite that enables NAV developers to connect to internal resources in a secure and friendly manner"
+  "description": "naisdevice is a mechanism enabling developers to connect to internal resources in a secure and friendly manner."
 }
