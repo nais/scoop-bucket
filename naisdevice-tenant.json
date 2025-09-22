@@ -11,7 +11,7 @@
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+        "if ($cmd -eq \"unianstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
       ]
     },
     "arm64": {
