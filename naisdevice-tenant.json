@@ -18,7 +18,7 @@
       "url": "https://github.com/nais/device/releases/download/v1.1.15/naisdevice-tenant_windows_arm64.exe",
       "hash": "FC3B054F1989D1B6C720C27BC7573E7B21E69B562E511E0F0E037DC3C5296B58",
       "installer": {
-        "script": [
+        "script": 
           "Write-Output \"Executing installer at $dir\\$fname\"",
           "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
         ]
