@@ -1,5 +1,5 @@
 {
-  "version": "v3.2.6",
+  "version": "v3.2.7",
   "architecture": {
     "64bit": {
       "url": "$NAIS_CLI_WINDOWS_AMD64_URL",
