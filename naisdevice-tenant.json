@@ -1,9 +1,9 @@
 {
-  "version": "v1.6.0",
+  "version": "v1.6.1",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/v1.6.0/naisdevice-tenant_windows_amd64.exe",
-      "hash": "7002767129BE9AEA901972260D8DF4E4E9E81ED53FACD0F22EC5E25E49DDE27B",
+      "url": "https://github.com/nais/device/releases/download/v1.6.1/naisdevice-tenant_windows_amd64.exe",
+      "hash": "30D1A576A7BDA6F78FF3D0452E7CFC171B85925E054D89E6ECBF2E8533D22FDC",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
@@ -15,8 +15,8 @@
       ]
     },
     "arm64": {
-      "url": "https://github.com/nais/device/releases/download/v1.6.0/naisdevice-tenant_windows_arm64.exe",
-      "hash": "1C6BDC83992645E9D835CFD74E55007A770C62F3A45B902CAF9FDBB1DC00D267",
+      "url": "https://github.com/nais/device/releases/download/v1.6.1/naisdevice-tenant_windows_arm64.exe",
+      "hash": "0806B2A70429B7A754105C28FAA8F5A0431A0979BB9EB0AC3A95C35F6C7E3FB2",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
