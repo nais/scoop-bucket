@@ -1,30 +1,30 @@
 {
-  "version": "v1.8.1",
+  "version": "v1.8.2",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/v1.8.1/naisdevice-tenant_windows_amd64.exe",
-      "hash": "679C5CD0D4DBE45B2E67390E69F163AAE9BDE870123A132B9FFF12282483C2DF",
+      "url": "https://github.com/nais/device/releases/download/v1.8.2/naisdevice-tenant_windows_amd64.exe",
+      "hash": "9A44BF16D9F9BFF348B36F5074750B0F5AC6CFBF928C716936D40B9737A5E308",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
       ]
     },
     "arm64": {
-      "url": "https://github.com/nais/device/releases/download/v1.8.1/naisdevice-tenant_windows_arm64.exe",
-      "hash": "560F10EFD73C6B8961BD49AC611767F02A029E616A1672E6B1FC84F216718066",
+      "url": "https://github.com/nais/device/releases/download/v1.8.2/naisdevice-tenant_windows_arm64.exe",
+      "hash": "9918EB01922659D0697A920BB00DBA31962FC327CC14C65FAF0787D3DD0861AB",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
+          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
       ]
     }
   },
