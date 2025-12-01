@@ -1,30 +1,30 @@
 {
-  "version": "v1.7.3",
+  "version": "v1.8.0",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/v1.7.3/naisdevice_windows_amd64.exe",
-      "hash": "80B56F261C2572BF4E93F8CC62A9597A101BCC54B34A3C588FC2BBE4FB7C932A",
+      "url": "https://github.com/nais/device/releases/download/untagged-4d938297d302bcb18fff/naisdevice_windows_amd64.exe",
+      "hash": "3DDC48DFD4EE9021DCE700EBFBE3B67824C46C44B3607D5261EA35CB29E7CB29",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
       ]
     },
     "arm64": {
-      "url": "https://github.com/nais/device/releases/download/v1.7.3/naisdevice_windows_arm64.exe",
-      "hash": "82376835919DDD11F35E9082671ECB915CF832B34DD8AADBB061C9906FAEC0EF",
+      "url": "https://github.com/nais/device/releases/download/untagged-4d938297d302bcb18fff/naisdevice_windows_arm64.exe",
+      "hash": "8EBD6967E130C82AB781F8D9918DD44B0119DB599DAFDC6D9FC1C7D0CCDCB46F",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
+          "Invoke-ExternalCommand \"$dir\\$fname\" -RunAs | Out-Null"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
+        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" -RunAs | Out-Null }"
       ]
     }
   },
