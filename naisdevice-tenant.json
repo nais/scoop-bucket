@@ -1,30 +1,42 @@
 {
-  "version": "v1.12.3",
+  "version": "v1.12.4",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/nais/device/releases/download/v1.12.3/naisdevice-tenant_windows_amd64.exe",
-      "hash": "E7F22C6D4BEAF304E3FDB52D031F20745C6A28CC6803605564F379B8ADCBDD5C",
+      "url": "https://github.com/nais/device/releases/download/v1.12.4/naisdevice-tenant_windows_amd64.exe",
+      "hash": "30286EB6DF3C0588354747DE88412AA14AB0216C029614B558422A921C251DFD",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
+          "if (!(Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs)) {",
+          "  exit 1",
+          "}"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
+        "if ($cmd -eq \"uninstall\") {",
+        "  if (!(Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs)) {",
+        "    exit 1",
+        "  }",
+        "}"
       ]
     },
     "arm64": {
-      "url": "https://github.com/nais/device/releases/download/v1.12.3/naisdevice-tenant_windows_arm64.exe",
-      "hash": "7AA4FA32B2EC08570881AB314CE97E4CFC7314894843C69CBBC2DDA63CDEAC6B",
+      "url": "https://github.com/nais/device/releases/download/v1.12.4/naisdevice-tenant_windows_arm64.exe",
+      "hash": "D374B9907799042ACC7838B21CBFE3B96846398FDF978D3BB34C24CAB32F4381",
       "installer": {
         "script": [
           "Write-Output \"Executing installer at $dir\\$fname\"",
-          "Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs"
+          "if (!(Invoke-ExternalCommand \"$dir\\$fname\" /S -RunAs)) {",
+          "  exit 1",
+          "}"
         ]
       },
       "post_uninstall": [
-        "if ($cmd -eq \"uninstall\") { Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs }"
+        "if ($cmd -eq \"uninstall\") {",
+        "  if (!(Invoke-ExternalCommand \"$env:ProgramW6432\\NAV\\naisdevice\\uninstaller.exe\" /S -RunAs)) {",
+        "    exit 1",
+        "  }",
+        "}"
       ]
     }
   },
